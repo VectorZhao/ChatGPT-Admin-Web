@@ -7,6 +7,9 @@ WORKDIR /
 # 将项目文件复制到工作目录中
 COPY . /
 
+# 将.env文件复制到/apps/chat目录
+COPY .env /apps/chat/
+
 # 进入/apps/chat目录
 RUN cd /apps/chat
 
@@ -14,14 +17,8 @@ RUN cd /apps/chat
 RUN npm install -g pnpm yarn
 RUN pnpm install
 
-
-# 设置环境变量
-COPY .env.example /app
-
 # 编译项目
 RUN yarn build
-
-
 
 # 暴露端口 3000
 EXPOSE 3000
