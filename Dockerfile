@@ -19,7 +19,7 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 # 编译项目
-RUN yarn build
+RUN npx turbo run build
 
 # 暴露端口 3000
 EXPOSE 3000
