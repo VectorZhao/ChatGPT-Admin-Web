@@ -17,6 +17,7 @@ RUN cd /apps/chat
 # 安装项目依赖
 RUN npm install -g pnpm
 RUN pnpm install
+RUN npm install -g typescript
 
 # 编译项目
 RUN npx turbo run build
