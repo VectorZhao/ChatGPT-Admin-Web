@@ -15,7 +15,7 @@ COPY .env /apps/chat/
 RUN cd /apps/chat
 
 # 安装项目依赖
-RUN npm install -g pnpm yarn
+# RUN npm install -g pnpm
 RUN pnpm install
 
 # 编译项目
