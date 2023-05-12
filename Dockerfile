@@ -2,13 +2,13 @@
 FROM node:latest
 
 # 将工作目录设置为 /app
-WORKDIR .
+WORKDIR /
 
 # 将项目文件复制到工作目录中
-COPY . /app
+COPY . /
 
-# 进入/app/apps/chat目录
-cd 
+# 进入/apps/chat目录
+RUN cd /apps/chat
 
 # 安装项目依赖
 RUN npm install -g pnpm yarn
