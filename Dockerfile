@@ -8,7 +8,7 @@ WORKDIR /
 COPY . /
 
 # 将.env文件复制到/apps/chat目录
-COPY .env.example .env
+
 COPY .env /apps/chat/
 
 # 进入/apps/chat目录
