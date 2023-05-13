@@ -2,8 +2,8 @@ const title = process.env.NEXT_PUBLIC_TITLE;
 
 const cn = {
   Index: {
-    Title: title || "ChatGPT Admin",
-    SubTitle: "欢迎关注微信公众号：",
+    Title: title || "ChatALL",
+    SubTitle: "Personal AI assistant - ",
     Submit: "提交",
     Login: "登录",
     Register: "注册",
